@@ -4,9 +4,9 @@ import psycopg2
 db_host = 'localhost'     # Cambia esto por la dirección del servidor de tu base de datos
 # Cambia esto por el puerto de tu base de datos (por defecto, PostgreSQL usa el puerto 5432)
 db_port = '5432'
-db_name = 'mysvalenciagdb'  # Cambia esto por el nombre de tu base de datos
-db_user = 'svalenciag'    # Cambia esto por tu nombre de usuario de PostgreSQL
-db_password = 'password'  # Cambia esto por tu contraseña de PostgreSQL
+db_name = 'datosanillo'  # Cambia esto por el nombre de tu base de datos
+db_user = 'root'    # Cambia esto por tu nombre de usuario de PostgreSQL
+db_password = 'root'  # Cambia esto por tu contraseña de PostgreSQL
 
 try:
     # Conectar a la base de datos
@@ -24,7 +24,7 @@ try:
     # Ejecutar consultas SQL o realizar otras operaciones aquí
 
     # Ejemplo: Ejecutar una consulta
-    cursor.execute("""SELECT * FROM datosanillo WHERE radio_anillo = '100'""")
+    cursor.execute("""SELECT * FROM mediciones """)
 
     # Obtener resultados
     for row in cursor:
